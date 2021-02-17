@@ -19,12 +19,12 @@ component,就是一个 el-submenu,如果它没有 children 了,那么就是一�
 \$router.push(path.resolve(currentPath,route.path)) 来改变 url.
 
 axios.intercepotrs.response.use((response)=>{
-let code = response.data.code;
-if(code === -2){
-//token 过期了,无感知去刷新 token.
-}
+  let code = response.data.code;
+  if(code === -2){
+  //token 过期了,无感知去刷新 token.
+  }
 
 },err=>{
-//没 token 直接 401,直接去首页
-//有 token 返回 500,reject.
+  //没 token 直接 401,直接去首页
+  //有 token 返回 500,reject.
 })
