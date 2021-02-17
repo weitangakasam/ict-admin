@@ -23,7 +23,7 @@ axios.intercepotrs.response.use((response)=>{
   if(code === -2){
   //token 过期了,无感知去刷新 token.
   }
-
+ 
 },err=>{
   //没 token 直接 401,直接去首页
   //有 token 返回 500,reject.
